@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  /* Primary */
+
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  --font-size-1: 15px;
+  --font-size-2: 40px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size-1);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--very-light-gray);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 920px;
+  max-height: 500px;
+  height: 100%;
+  margin: 170px auto;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+
+}
+
+.card {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 47px;
+  justify-content: space-between;
+}
+
+.card-1 {
+  background-color: var(--bright-orange);
+}
+.card-2 {
+  background-color: var(--dark-cyan);
+}
+.card-3 {
+  background-color: var(--very-dark-cyan);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-icon {
+  width: 64px;
+}
+
+.card-title {
+  font-family: "Big Shoulders Display";
+  font-size: 40px;
+  margin-top: 36px;
+  color: var(--very-light-gray);
+}
+
+.card-description {
+  font-family: "Lexend Deca";
+  font-size: 1rem;
+  line-height: 24px;
+  margin-top: 28px;
+  color: var(--transparent-white);
+}
+
+.card-btn {
+  background-color: var(--very-light-gray);
+  padding: 11px 31px;
+  width: fit-content;
+  font-family: "Lexend Deca";
+  font-size: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  border: 3px solid var(--very-light-gray);
+  transition: all .5s;
+}
+
+.card-1 .card-btn {
+  color: var(--bright-orange);
+}
+
+.card-2 .card-btn {
+  color: var(--dark-cyan);
+}
+
+.card-3 .card-btn {
+  color: var(--very-dark-cyan);
+}
+
+
+.card-btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--very-light-gray);
+}
+
+
+
+@media screen and (max-width : 900px) {
+    :root {
+        --font-size-1: 13px;
+        --font-size-2: 36px;
+      }
+}
+
+@media screen and (max-width : 768px) {
+    :root {
+        --font-size-1: 15px;
+        --font-size-2: 40px;
+      }
+
+      .card-container {
+        width: 80%;
+        max-height: unset;
+        height: fit-content;
+        margin: 80px auto;
+        flex-direction: column;
+      }
+
+      .card {
+        gap: 32px;
+      }
+}
+
+@media screen and (max-width : 400px) {
+
+
+      .card-container {
+        width: 100%;
+      }
+}
