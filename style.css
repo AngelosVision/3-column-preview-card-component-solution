@@ -32,19 +32,6 @@ body {
   background-color: var(--very-light-gray);
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
